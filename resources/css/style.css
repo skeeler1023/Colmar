@@ -13,6 +13,9 @@ body {
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
+    position:absolute;
+    z-index:999;
+    background-color:#fff;
     
 }
 .logo {
@@ -155,6 +158,8 @@ nav {
         font-size: 2.5vw!important;
     }
     .body--container {
+        position:relative;
+        top:64px;
         padding:32px 24px;
         
     }
@@ -164,6 +169,10 @@ nav {
     .column-inner {
         padding: 24px;
     }
+}
+.body--container {
+    position:relative;
+    top:64px;
 }
 .two--column--left{
     min-width:60%;
