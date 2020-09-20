@@ -130,7 +130,14 @@ nav {
     align-items: center;
     flex-wrap: wrap;
 }
-
+@media screen and (min-width:400px) and (max-width:679px){
+    h1 {
+        font-size: 10vw!important;
+     }
+    p {
+        font-size: 7vw!important;
+    }
+}
 @media screen and (min-width:680px){
     .column--container {
         flex-wrap: inherit!important;
@@ -147,6 +154,9 @@ nav {
     .body--container {
         padding:32px 24px;
         
+    }
+    .start--here {
+        font-size: 2.5vw!important;
     }
 }
 .two--column--left{
@@ -179,12 +189,12 @@ nav {
     background-color:#404040;
     color: #fefefe;
     margin-right:24px;
-    font-size: 2rem;
+    font-size: 7vw;
 }
 
 h1 {
-    font-size: 2.5rem;
-}
+    font-size: 10vw;
+ }
 p {
-    font-size: 2rem;
+    font-size: 7vw;
 }
