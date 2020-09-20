@@ -119,10 +119,7 @@ nav {
 
 }
 
-.body--container {
-    padding:32px 24px;
-    
-}
+
 .gray {
     background-color: #efefef;
 }
@@ -133,6 +130,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
 }
+
 @media screen and (min-width:680px){
     .column--container {
         flex-wrap: inherit!important;
@@ -146,7 +144,10 @@ nav {
     p {
         font-size: 2.5vw!important;
     }
-    
+    .body--container {
+        padding:32px 24px;
+        
+    }
 }
 .two--column--left{
     min-width:60%;
@@ -178,8 +179,8 @@ nav {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 p {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
