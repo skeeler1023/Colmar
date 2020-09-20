@@ -43,7 +43,9 @@ body {
 .academy{
     color:#808080;
   }
-
+nav {
+    width:100%;
+}
   @media (min-width:480px){
     .logo--text {
         display:flex!important;
