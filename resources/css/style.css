@@ -33,8 +33,8 @@ body {
     text-transform: uppercase;  
 }
 .logo--svg {
-    background-image: url('resources/images/ic-logo.svg');
-    background-size:cover;
+    
+    background-size:fit;
     display:flex;
     width:32px;
     flex-direction: row;
