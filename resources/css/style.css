@@ -16,22 +16,9 @@ body {
     
 }
 .logo {
-    display:flex;   
-    margin-left:24px;
-    flex-direction: row;
-    justify-content: space-between;
-    color:red;
+    display:none;
 }
-.logo--text {
-    display:flex;
-    width:100%;
-    flex-direction: row;
-    justify-content: left;
-    margin:auto;
-    height:32px;
-    font-size:20px;
-    text-transform: uppercase;  
-}
+
 .logo--svg {
     
     background-size:fit;
@@ -44,6 +31,11 @@ body {
     font-size:2.5vw;
     text-transform: uppercase;  
 }
+
+.logo--text { 
+    display:none;
+}
+
 .colmar{
     color:#606060;
     font-weight: 600;
@@ -52,26 +44,71 @@ body {
     color:#808080;
   }
 
-.main--nav {
-    display:flex;  
+  @media (min-width:480px){
+    .logo--text {
+        display:flex!important;
+        width:100%;
+        flex-direction: row;
+        justify-content: left;
+        margin:auto;
+        height:32px;
+        font-size:20px;
+        text-transform: uppercase;  
+    }
+    .logo {
+        display:flex!important;   
+        margin-left:24px;
+        flex-direction: row;
+        justify-content: space-between;
+        color:red;
+    }
+    #mobile--logo{
+        display:none!important;
+    }
+    .mobile--nav {
+        justify-content: space-evenly!important;
+    }
+  }
+  @media (min-width:680px){
     
-    height:32px;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    float:right;
-    font-size:20px;
-}
+    .mobile--nav {
+        display:none!important;
+    }
+      .desktop--nav {display:flex!important;
+        height:32px;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        float:right;
+        font-size:20px;}
 
-.main--nav .nav--item {
+        
+        
+  }
+.desktop--nav {
+    display: none;
+}
+.nav--item {
     display:flex;
-    float:right;
     margin-right:16px;
-    
-
 }
-.main--nav  .sign-in {
+.sign-in {
     margin-right:24px;
+}
+
+.mobile--nav{
+    display:flex;
+        height:32px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        float:right;
+        font-size:20px;
+        width:90%;
+        margin:auto;
+}
+.mobile--nav .nav--item {
+
 }
 
 .body--container {
@@ -86,14 +123,30 @@ body {
     flex-direction:row;
     justify-content:space-between;
     align-items: center;
-
+    flex-wrap: wrap;
+}
+@media screen and (min-width:680px){
+    .column--container {
+        flex-wrap: inherit!important;
+    }
+    .two--column--right{
+        min-width:40%;
+    }
+     h1 {
+        font-size: 4.3vw!important;
+     }
+    p {
+        font-size: 2.5vw!important;
+    }
+    
 }
 .two--column--left{
     min-width:60%;
     display:flex;
 }
 .two--column--right{
-    min-width:40%;
+    width:100%;
+    
     
 
 }
@@ -117,8 +170,8 @@ body {
 }
 
 h1 {
-    font-size: 4.3vw;
+    font-size: 4rem;
 }
 p {
-    font-size: 2.5vw;
+    font-size: 2.5rem;
 }
