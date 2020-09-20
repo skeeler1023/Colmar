@@ -33,7 +33,7 @@ body {
     text-transform: uppercase;  
 }
 .logo--svg {
-    background-image: url('/Users/Sam/Desktop/Coding_Projects/Colmar-Academy/resources/images/ic-logo.svg');
+    background-image: url('https://github.com/skeeler1023/Colmar/blob/main/resources/images/ic-logo.svg');
     background-size:cover;
     display:flex;
     width:32px;
