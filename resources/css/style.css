@@ -45,6 +45,9 @@ body {
   }
 nav {
     width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
   @media (min-width:480px){
     .logo--text {
@@ -79,10 +82,13 @@ nav {
       .desktop--nav {display:flex!important;
         height:32px;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: flex-end!important;
         align-items: center;
         float:right;
         font-size:20px;}
+    nav {
+        justify-content: flex-end!important;
+    }
 
         
         
